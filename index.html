@@ -425,8 +425,8 @@
           <div><strong style="color:#183269">UPI</strong><small>Powered by Razorpay</small></div>
         </div>
         <div class="qr-box">
-          <canvas id="qr" width="76" height="76" aria-label="Receipt verification QR code"></canvas>
-          <div class="qr-copy"><strong>Scan to verify</strong><br><span style="color:#7c8796">This receipt is digitally generated<br>and can be verified using the QR code.</span></div>
+          <canvas id="qr" width="76" height="76" aria-label="Receipt verification "></canvas>
+          <div class="qr-copy"><strong>Scanned to verified</strong><br><span style="color:#7c8796">This receipt is digitally generated.</span></div>
         </div>
       </section>
 
@@ -458,29 +458,7 @@
     ctx.fillStyle = "#fff";
     ctx.fillRect(0, 0, 76, 76);
     ctx.fillStyle = "#111";
-    const pattern = [
-      "11111110011111001111111",
-      "10000010011110010000001",
-      "1011101000010101011101",
-      "1011101011010101011101",
-      "1011101001011101011101",
-      "1000001000101001000001",
-      "1111111010101011111111",
-      "0000000011101000000000",
-      "1110111010011110111011",
-      "1001110011100101001101",
-      "1101001110111010010110",
-      "0110010111001111101001",
-      "1011111000110010111110",
-      "0000000011011100010101",
-      "1111111010100101111010",
-      "1000001011011001000011",
-      "1011101010010111011101",
-      "1011101001101010010100",
-      "1011101010111101001011",
-      "1000001001010011011100",
-      "1111111011101010110011"
-    ];
+    
     const size = 76;
     const moduleSize = 3;
     const offset = 2;
